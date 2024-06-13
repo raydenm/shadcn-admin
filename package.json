@@ -51,6 +51,7 @@
     "eslint-plugin-tailwindcss": "^3.13.1",
     "happy-dom": "^12.10.3",
     "husky": "^8.0.3",
+    "lint-staged": "^15.2.7",
     "lucide-react": "^0.307.0",
     "postcss": "^8.4.33",
     "prettier": "^3.1.1",
@@ -64,6 +65,12 @@
     "branches": [
       "master",
       "next"
+    ]
+  },
+  "lint-staged": {
+    "*.+(ts|tsx)": [
+      "pnpm lint",
+      "pnpm format"
     ]
   }
 }
